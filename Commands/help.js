@@ -9,7 +9,7 @@ module.exports = {
         .setTitle('Help Command!')
         .setDescription('Prefix is ">"')
         .addFields(
-            {name: '**Fun Section**', value: '`ping` , `boop` , `wel , `pet`'} ,
+            {name: '**Fun Section**', value: '`ping` , `boop` , `wel` , `pet`'} ,
             {name: '**Moderation Section**', value: '`Clear` , `Ban` , `Kick`', incline: true},
             {name: '**Utility Section**', value: '`socials`, `deadchat`'}
         )
