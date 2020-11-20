@@ -18,8 +18,8 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('#saying-pog' , {
-    type: 'COMPETING'
+  Client.user.setActivity('The Lockdown' , {
+    type: 'WATCHING'
   })
     
    
