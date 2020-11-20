@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const Client = new Discord.Client() 
-const Token = 'NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs';
 
 
 const Prefix = '>'; 
@@ -58,6 +57,12 @@ Client.on('message', message => {
 
    } else if(Command == 'pet') {
      Client.commands.get('pet').execute(message, args);
+
+   } else if(Command == 'kick') {
+     Client.commands.get('kick').execute(message, args); 
+
+   } else if(Command == 'ban') {
+     Client.commands.get('ban').execute(message, args);
    }
 
       
@@ -70,4 +75,4 @@ Client.on('message', message => {
 
 
 
-Client.login(Token);
+Client.login(process.env.token);

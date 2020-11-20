@@ -1,9 +1,18 @@
-module.exports = {
-    name: 'ping' ,
-    description:'Pong!',
-    execute(message, args) {
-        message.channel.send('yes, ping pong! <:meow:748376557248315486>')
-       
+module.exports= {
+    name: 'ping',
+    description: "see the bot ping",
+    execute(message, args){
+        const Discord = require('discord.js');
+
+
+        message.channel.send('Pinging...').then(pingMessage => {
+            
+            const start = message.createdTimestamp;
+            const end = pingMessage.createdTimestamp;
+            const subtraction = end - start;
+            
+            pingMessage.edit(`**PINGOO!** took \`${subtraction}ms.\``)
+            })
 
     }
 }
