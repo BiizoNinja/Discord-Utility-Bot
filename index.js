@@ -18,8 +18,8 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('The Lockdown' , {
-    type: 'WATCHING'
+  Client.user.setActivity('discord.gg/QvUZMUj' , {
+    type: 'PLAYING'
   })
     
    

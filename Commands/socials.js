@@ -11,7 +11,7 @@ module.exports = {
             {name: '**YouTube**', value: 'https://www.youtube.com/channel/UCboTvaABasieF8WMDOwizBg'} ,
             {name: '**Twitter**', value: 'https://twitter.com/BiizoNinja' , incline: 'true'} ,
             {name: '**Twitch**' , value: 'https://www.twitch.tv/BiizoNinja123'} ,
-            {name: '**Reddit**' , value: 'https://www.reddit.com/r/BiizoNinja/', inclinw: 'true'} ,
+            {name: '**Reddit**' , value: 'https://www.reddit.com/r/BiizoNinja/', incline: 'true'} ,
             {name: '**Instagram**' , value: 'https://www.instagram.com/biizoninja/'}
 
         )
