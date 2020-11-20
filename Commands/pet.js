@@ -8,7 +8,7 @@ module.exports = {
     description:'Send!',
     execute (message, args) {
 
-    message.channel.send(new Discord.MessageAttachment('/.PET_COMMAND/'+Math.floor(+Math.random()*30)`+.jpg`))
+    message.channel.send(new Discord.MessageAttachment('/.PET_COMMAND/'+Math.floor(+Math.random()*30)`+.jpg`));
 
     }
 }
