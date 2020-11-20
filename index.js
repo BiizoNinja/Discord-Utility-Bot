@@ -18,8 +18,8 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('Hallo ❤️  ' , {
-    type: 'WATCHING'
+  Client.user.setActivity('No Support form Biizo... Sleeping!  ' , {
+    type: 'PLAYING'
   })
     
    
