@@ -11,7 +11,7 @@ module.exports = {
         .addFields(
             {name: '**Fun Section**', value: '`ping` , `boop` , `wel` , `pet`'} ,
             {name: '**Moderation Section**', value: '`Clear` , `Ban` , `Kick`', incline: true},
-            {name: '**Utility Section**', value: '`socials`, `deadchat`'}
+            {name: '**Utility Section**', value: '`socials`, `deadchat` `vote`'}
         )
         .setColor('#3399ff')
         .setFooter('DM BiizoNinja#3337 for more info!')
