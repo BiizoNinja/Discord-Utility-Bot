@@ -18,7 +18,7 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('No Support form Biizo... Sleeping!  ' , {
+  Client.user.setActivity('mc with Biomeium!  ' , {
     type: 'PLAYING'
   })
     
