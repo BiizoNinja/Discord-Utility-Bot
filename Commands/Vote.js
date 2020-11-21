@@ -5,7 +5,7 @@ module.exports = {
     description:'Vote for Biizo\'s Lab',
     execute(message, args) {
 
-        const VoteEmbed = new Discord.MessageEmbed
+        const VoteEmbed1 = new Discord.MessageEmbed
         .setTitle('Vote Command!')
         .setDescription('Oh so you wanna vote? Well you can vote by clicking on the link!')
         .addFields(
@@ -16,7 +16,7 @@ module.exports = {
         .setColor('#0099ff')
         .setTimestamp();
 
-    message.channel.send(VoteEmbed);
+    message.channel.send(VoteEmbed1);
     }
 
 }
