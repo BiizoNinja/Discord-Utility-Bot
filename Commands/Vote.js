@@ -5,7 +5,7 @@ module.exports = {
     description:'Vote for Biizo\'s Lab',
     execute(message, args) {
 
-        const VoteEmbed1 = new Discord.MessageEmbed
+        const VoteEmbed1 = new Discord.MessageEmbed()
         .setTitle('Vote Command!')
         .setDescription('Oh so you wanna vote? Well you can vote by clicking on the link!')
         .addFields(
