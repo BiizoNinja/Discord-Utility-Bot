@@ -66,6 +66,13 @@ Client.on('message', message => {
 
    } else if(Command =='vote') {
      Client.commands.get('vote').execute(message, args);
+
+   } else if(Command == 'slowmode') {
+     Client.commands.get('slowmode').execute(message, args);
+
+   } else if (Command == 'warn') {
+    Client.commands.get('warn').execute(message, args);
+
    }
 
       
