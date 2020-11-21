@@ -18,8 +18,8 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('mc with Biomeium!  ' , {
-    type: 'PLAYING'
+  Client.user.setActivity('Harry Potter' , {
+    type: 'WATCHING'
   })
     
    
