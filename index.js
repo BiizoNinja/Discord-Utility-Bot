@@ -63,6 +63,9 @@ Client.on('message', message => {
 
    } else if(Command == 'ban') {
      Client.commands.get('ban').execute(message, args);
+
+   } else if(Command =='vote') {
+     Client.commands.get('vote').execute(message, args);
    }
 
       
