@@ -12,6 +12,7 @@ module.exports = {
 
         if(user) {
             const Member = message.guild.member(user);
+
         
         if(Member){
             const WarnEmbed = new Discord.MessageEmbed()
