@@ -18,7 +18,7 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('Biizo AFK... Sleeping!' , {
+  Client.user.setActivity('Happy Birthday! SAB' , {
     type: 'PLAYING'
   })
     
