@@ -7,8 +7,7 @@ module.exports = {
         if(!message.member.roles.cache.has('727076911926476822')) return message.reply("<:WokePepe:748831596785827870> You do not have the permission to do this!")
 
         const Reason = message.content.split(' ').slice(2).join(" ") 
-
-        
+       
         const user = message.mentions.users.first(); 
 
         if(user) {
@@ -25,7 +24,7 @@ module.exports = {
 
         message.channel.send(WarnEmbed);
                     
-        } else(!Reason) 
+        } else if(!Reason) 
         return message.reply('<:down_vote:748383106444034050> Please provide a reason')
                                   
         }
