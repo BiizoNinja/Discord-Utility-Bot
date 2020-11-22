@@ -6,7 +6,9 @@ module.exports = {
     execute(message, args) {
         if(!message.member.roles.cache.has('727076911926476822')) return message.reply("<:WokePepe:748831596785827870> You do not have the permission to do this!")
 
-        const Reason = (args[2]);
+        const Reason = message.content.split(' ').slice(2).join(" ") 
+
+        
         const user = message.mentions.users.first(); 
 
         if(user) {
@@ -21,8 +23,8 @@ module.exports = {
             .setThumbnail('https://media.discordapp.net/attachments/753832377054396448/779717997429260308/BiizoNinjas_Lab.png?width=461&height=461')
             .setTimestamp();
 
-        message.channel.send(WarnEmbed)
-            
+        message.channel.send(WarnEmbed);
+                    
         } else(!Reason) 
         return message.reply('<:down_vote:748383106444034050> Please provide a reason')
                                   
