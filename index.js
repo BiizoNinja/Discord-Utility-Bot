@@ -18,15 +18,12 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('The Moderators lol' , {
-    type: 'WATCHING'
+  Client.user.setActivity('epic Biomeium CO OWNER!' , {
+    type: 'PLAYING'
   })
     
    
   })
-
-
-
 
 Client.on('message', message => {
   if(!message.content.startsWith(Prefix) ||message.author.bot) return;
@@ -77,10 +74,6 @@ Client.on('message', message => {
 
       
 });
-
-
-
-
  
 
 
