@@ -6,19 +6,15 @@ module.exports = {
     execute(message, args) {
         if(!message.member.roles.cache.has('727076911926476822')) return message.reply("<:WokePepe:748831596785827870> You do not have the permission to do this!")
 
-        const Reason = args[2]
        
         const user = message.mentions.users.first(); 
 
         if(user) {
             const Member = message.guild.member(user);
       
-        } 
-        if(!Reason) {
-             return message.reply('<:down_vote:748383106444034050> Please provide a reason')
-        }
+     
         
-        else if(Member){
+        if(Member){
             let WarnEmbed = new Discord.MessageEmbed()
             .setTitle('MEMBER WARNED!')
             .setDescription(` <a:animated_check_2:780277155874603008> **${user.tag}** Has been warned for the reason ${args[2]} `)
@@ -26,7 +22,10 @@ module.exports = {
             .setColor('#00ccff')
             .setTimestamp();
         message.channel.send(WarnEmbed)
+
         }
     }
-}
-    
+  
+}   
+ 
+} 
