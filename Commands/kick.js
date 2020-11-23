@@ -16,7 +16,7 @@ module.exports = {
             member.kick(`you were kicked from Biizo's Lab!`).then(()=> {
                 message.reply(`Successfully Kicked **${user.tag}**`)
             }).catch(err =>{
-                message.reply('I was enable to kick that user');
+                message.reply('I was unable to kick that user');
                 console.log(err);
             });
         } else{

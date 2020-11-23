@@ -16,7 +16,7 @@ module.exports = {
            member.ban(`you were Banned from Biizo's Lab!`).then(()=> {
                message.reply(`Successfully Banned **${user.tag}**`)
            }).catch(err =>{
-               message.reply('I was enable to Ban that user');
+               message.reply('I was unable to Ban that user');
                console.log(err);
            });
        } else{
