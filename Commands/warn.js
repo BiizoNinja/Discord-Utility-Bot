@@ -21,7 +21,7 @@ module.exports = {
         if(Member){
             let WarnEmbed = new Discord.MessageEmbed()
             .setTitle('MEMBER WARNED!')
-            .setDescription(` <a:animated_check_2:780277155874603008> **${user.tag}** Has been warned for the reason ${args[2]}`)
+            .setDescription(` <a:animated_check_2:780277155874603008> **${user.tag}** Has been warned for the reason ${args[2]} > ${args[20]}`)
             .setFooter('We highly recommend not to do this again!')
             .setColor('#00ccff')
             .setTimestamp();
