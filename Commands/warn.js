@@ -21,17 +21,12 @@ module.exports = {
         if(Member){
             let WarnEmbed = new Discord.MessageEmbed()
             .setTitle('MEMBER WARNED!')
-            .setDescription(` <a:animated_check_2:780277155874603008> **${user.tag}** Has been warned for the reason ${args[2]} > ${args[20]}`)
+            .setDescription(` <a:animated_check_2:780277155874603008> **${user.tag}** Has been warned for the reason ${args[2]} `)
             .setFooter('We highly recommend not to do this again!')
             .setColor('#00ccff')
             .setTimestamp();
 
-            if(args[20]) {
-                if(member){
-                    message.channel.send(WarnEmbed)
-                }
-            }
-                    
+           
         } else if(!Reason) 
         return message.reply('<:down_vote:748383106444034050> Please provide a reason')
                                   
