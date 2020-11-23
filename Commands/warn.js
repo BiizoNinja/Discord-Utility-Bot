@@ -11,7 +11,10 @@ module.exports = {
 
         if(user) {
             const Member = message.guild.member(user);
-      
+        
+        if(!args[2]) {
+            return message.reply('You need to provide a reason!')
+        }
      
         
         if(Member){
