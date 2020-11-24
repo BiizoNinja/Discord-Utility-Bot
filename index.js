@@ -6,6 +6,7 @@ const Prefix = '>';
 
 const fs = require('fs');
 const { clearScreenDown } = require('readline');
+const keyboardsmash = require('./Commands/keyboardsmash');
  
 Client.commands = new Discord.Collection();
  
@@ -18,8 +19,8 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('epic Biomeium CO OWNER!' , {
-    type: 'PLAYING'
+  Client.user.setActivity('EPIKNESS!' , {
+    type: 'WATCHING'
   })
     
    
@@ -30,6 +31,8 @@ Client.on('message', message => {
 
   const args = message.content.slice(Prefix.length).split(" ");
   const Command = args.shift().toLowerCase();
+  if (!Command.guildOnly && message.channel.type === 'dm') return;
+
 
    if(Command === 'ping') {
     Client.commands.get('ping').execute(message, args);
@@ -70,12 +73,44 @@ Client.on('message', message => {
    } else if (Command == 'warn') {
     Client.commands.get('warn').execute(message, args);
 
-   }
+   } else if(Command == 'kill') {
+     Client.commands.get('kill').execute(message, args);
 
+   } else if(Command == 'kbs') {
+     Client.commands.get('keyboardsmash').execute(message, args);
+
+   } else if(Command == 'keyboardsmash') {
+     Client.commands.get('keyboardsmash').execute(message, args);
+
+   }  else if(Command == 'welcome') {
+     Client.commands.get('wel').execute(message, args);
+
+   } else if(Command == 'w') {
+    Client.commands.get('warn').execute(message, args);
+
+   } else if(Command == 'membercount') {
+     Client.commands.get('membercount').execute(message, args);
+
+   }
       
 });
- 
+
+Client.on('message', message => {
+  if(!message.content.startsWith(Prefix) ||message.author.bot) return;
+
+  const args = message.content.slice(Prefix.length).split(" ");
+  const Command = args.shift().toLowerCase();
+
+  if (!Command.guildOnly && message.channel.type === 'dm') return;
+   
+   if(Command == 'yeet') {
+     Client.commands.get('yeet').execute(message, args);
+   } else if(Command == 'mb') {
+     Client.commands.get('membercount').execute(message, args);
+   }
+
+});
 
 
-
-Client.login(process.env.token);
+Client.login(process.env.token)
+//Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
