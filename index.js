@@ -19,8 +19,8 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('EPIKNESS!' , {
-    type: 'WATCHING'
+  Client.user.setActivity('BiizoNinja AFK, Sleeping! 💤  ' , {
+    type: 'PLAYING'
   })
     
    
