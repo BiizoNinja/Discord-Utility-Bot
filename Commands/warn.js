@@ -15,7 +15,7 @@ module.exports = {
      
         let WarnEmbed = new Discord.MessageEmbed()
         .setTitle('**The member has been successfully warned!**')
-        .setDescription(`**${user.tag}** Has been warned for the reason **${args[1]}**.`)
+        .setDescription(`**${user.tag}** Has been warned for the reason ${args[1]} ${args[2]} ${args[3]} ${args[4]} ${args[5]} ${args[6]} ${args[7]} ${args[8]} ${args[9]}`)
         .setFooter('Please check your DMs')
         .setColor('#00ff00')
         .setTimestamp();
@@ -26,7 +26,7 @@ module.exports = {
         .setDescription(`You have been warned in ${guild.name}.`)
         .setFooter('We highly recommend not doing this again!')
         .addFields(
-            {name: `> **For the reason:** \`${args[1]}\`` , value: `> **By the Moderator:** ${message.author}`},
+            {name: `> **For the reason:** \`${args[1]} ${args[1]} ${args[2]} ${args[3]} ${args[4]} ${args[5]} ${args[6]} ${args[7]} ${args[8]} ${args[9]}\`` , value: `> **By the Moderator:** ${message.author}`},
         )
         .setColor('#ff0000')
         .setTimestamp();
