@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
         
         const user = message.mentions.members.first();
-        if(!user) return message.reply("<:down_vote:748383106444034050> Please mention a user whom you want to kill")
+        if(!user) return message.reply("<:down_vote:748383106444034050> Please mention a user whom you want to rickroll!")
 
         let rrembed = new Discord.MessageEmbed()
         .setColor('#FF0000')

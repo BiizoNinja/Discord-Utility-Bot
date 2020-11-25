@@ -19,7 +19,7 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('BiizoNinja AFK, Sleeping! 💤  ' , {
+  Client.user.setActivity('Vsause, Michael here 🧠' , {
     type: 'PLAYING'
   })
     
@@ -105,12 +105,23 @@ Client.on('message', message => {
    
    if(Command == 'yeet') {
      Client.commands.get('yeet').execute(message, args);
+
    } else if(Command == 'mb') {
      Client.commands.get('membercount').execute(message, args);
+
+   } else if(Command == 'rr') {
+     Client.commands.get('rickroll').execute(message, args);
+
+   } else if(Command == 'rickroll') {
+     Client.commands.get('rickroll').execute(message, args);
+
+   } else if(Command == 'mute') {
+     Client.commands.get('mute').execute(message, args);
    }
+
 
 });
 
 
-Client.login(process.env.token)
-//Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
+//Client.login(process.env.token)
+Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
