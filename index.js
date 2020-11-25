@@ -19,7 +19,7 @@ for(const file of commandFiles){
 
 Client.on('ready', () => {
 
-  Client.user.setActivity('Vsause, Michael here 🧠' , {
+  Client.user.setActivity('BiizoNinja AFK! Sleeping!' , {
     type: 'PLAYING'
   })
     
