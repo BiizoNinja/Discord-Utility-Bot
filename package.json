@@ -9,6 +9,7 @@
   "author": "BiizoNinja",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.4.1"
+    "discord.js": "^12.4.1",
+    "mongoose": "^5.10.16"
   }
 }

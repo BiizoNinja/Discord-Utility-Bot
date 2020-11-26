@@ -7,6 +7,7 @@ const Prefix = '>';
 const fs = require('fs');
 const { clearScreenDown } = require('readline');
 const keyboardsmash = require('./Commands/keyboardsmash');
+
  
 Client.commands = new Discord.Collection();
  
@@ -17,13 +18,12 @@ for(const file of commandFiles){
     Client.commands.set(command.name, command);
 }
 
-Client.on('ready', () => {
+Client.on('ready',  () => {
 
-  Client.user.setActivity('BiizoNinja AFK! Sleeping!' , {
+  Client.user.setActivity('pizza gang 🍕  ' , {
     type: 'PLAYING'
   })
-    
-   
+     
   })
 
 Client.on('message', message => {
@@ -123,5 +123,5 @@ Client.on('message', message => {
 });
 
 
-//Client.login(process.env.token)
-Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
+Client.login(process.env.token)
+//Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
