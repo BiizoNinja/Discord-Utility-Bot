@@ -20,10 +20,19 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('BiizoNinja AFK! Sleeping...  ' , {
+  Client.user.setActivity('pizza  ' , {
     type: 'PLAYING'
   })
-     
+  Client.on('guildMemberAdd', message => {
+
+   const channel = member.guild.channels.cache.finds(channel => channel.name === "general")
+   if(!channel) return;
+
+   console.log('Channel not found!')
+  
+   channel.send(`<:BL_wave:781730670594490379> New member has joined ${guild.name}. Welcome! ${member}`)
+  })
+
   })
 
 Client.on('message', message => {
@@ -117,11 +126,17 @@ Client.on('message', message => {
 
    } else if(Command == 'mute') {
      Client.commands.get('mute').execute(message, args);
+
+   } else if(Command == 'lb') {
+     Client.commands.get('lambsauce').execute(message, args);
+
+   } else if(Command == 'lambsauce') {
+    Client.commands.get('lambsauce').execute(message, args);
    }
 
 
 });
 
 
-Client.login(process.env.token)
-//Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
+//Client.login(process.env.token)
+Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
