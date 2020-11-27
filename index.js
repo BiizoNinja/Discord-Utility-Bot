@@ -20,7 +20,7 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('pizza  ' , {
+  Client.user.setActivity('BiizoNinja AFK! Sleeping...' , {
     type: 'PLAYING'
   })
   Client.on('guildMemberAdd', message => {
