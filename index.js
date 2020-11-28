@@ -20,7 +20,7 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('BiizoNinja AFK! Sleeping...' , {
+  Client.user.setActivity('BiizoNinja AFK! Sleeping... ' , {
     type: 'PLAYING'
   })
   Client.on('guildMemberAdd', message => {
@@ -100,8 +100,7 @@ Client.on('message', message => {
    } else if(Command == 'membercount') {
      Client.commands.get('membercount').execute(message, args);
 
-   }
-      
+   } 
 });
 
 Client.on('message', message => {
@@ -132,8 +131,13 @@ Client.on('message', message => {
 
    } else if(Command == 'lambsauce') {
     Client.commands.get('lambsauce').execute(message, args);
-   }
 
+   } else if(Command == 'cakesmash') {
+    Client.commands.get('cakesmash').execute(message, args);
+
+   } else if(Command == 'cs') {
+    Client.commands.get('cakesmash').execute(message, args);
+   }
 
 });
 

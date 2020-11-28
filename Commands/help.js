@@ -9,11 +9,11 @@ module.exports = {
         .setTitle('Help Command!')
         .setDescription('Prefix is ">"')
         .addFields(
-            {name: '**Fun Section**', value: '`ping` , `boop` , `wel`, `kill`, `keyboardsmash` , `yeet`, `rickroll` '} ,
+            {name: '**Fun Section**', value: '`ping` , `boop` , `wel`, `kill`, `keyboardsmash` , `yeet`, `rickroll`, `cakesmash`  '} ,
             {name: '**Moderation Section**', value: '`Clear` , `Ban` , `Kick` `slowmode` `warn` ', incline: true},
             {name: '**Utility Section**', value: '`socials`, `deadchat`, `vote`, `membercount`'}
         )
-        .setColor('#3399ff')
+        .setColor('RANDOM')
         .setFooter('DM BiizoNinja#3337 for more info!')
         .setTimestamp();
 

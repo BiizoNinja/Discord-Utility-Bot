@@ -4,7 +4,7 @@ module.exports = {
     name: 'mute' ,
     description:'mutes people!',
     execute(message, args) {
-        if(!message.member.permissions.has('KICK_MEMBERS'))
+        if(!message.member.roles.has('727076911926476822'))
         return message.reply('You don\'t have the permissions')
        
        const user = message.mentions.users.first(); 
