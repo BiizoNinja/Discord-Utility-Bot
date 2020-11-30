@@ -137,6 +137,9 @@ Client.on('message', message => {
 
    } else if(Command == 'cs') {
     Client.commands.get('cakesmash').execute(message, args);
+
+   } else if(Command == 'say') {
+     Client.commands.get('say').execute(message, args);
    }
 
 });
