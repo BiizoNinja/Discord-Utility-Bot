@@ -4,7 +4,6 @@ module.exports = {
     execute(message, args) {
         const content = args.slice(1).join(' ')
 
-
         if(!content) return 
         message.channel.send('What should i say smh...')
 

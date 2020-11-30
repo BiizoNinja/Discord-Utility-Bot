@@ -10,7 +10,9 @@ module.exports = {
         const user = message.mentions.users.first() || message.author;
         const guild = message.guild
         const reason = args.slice(1).join(' ')
-
+        if(!user) {
+            message.channel.send('Please specify a user!')
+          }
      
         const WarnEmbed = new Discord.MessageEmbed()
         .setTitle('**The member has been successfully warned!**')
