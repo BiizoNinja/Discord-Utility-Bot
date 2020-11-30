@@ -20,8 +20,8 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('mc with Biomeium' , {
-    type: 'PLAYING'
+  Client.user.setActivity('BiizoNinja\'s Vids! , {
+    type: 'WATCHING'
   })
   Client.on('guildMemberAdd', message => {
 
