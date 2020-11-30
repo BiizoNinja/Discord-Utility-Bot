@@ -20,7 +20,7 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('BiizoNinja\'s Vids! , {
+  Client.user.setActivity('BiizoNinja\'s Vids!' , {
     type: 'WATCHING'
   })
   Client.on('guildMemberAdd', message => {
