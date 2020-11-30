@@ -20,7 +20,7 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('waht hello server why dead?' , {
+  Client.user.setActivity('mc with Biomeium' , {
     type: 'PLAYING'
   })
   Client.on('guildMemberAdd', message => {
