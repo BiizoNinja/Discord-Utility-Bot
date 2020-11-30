@@ -5,7 +5,7 @@ module.exports = {
         const content = args.slice(1).join(' ')
 
 
-        if(content) return 
+        if(!content) return 
         message.channel.send('What should i say smh...')
 
         if(content) {
