@@ -18,6 +18,7 @@ for(const file of commandFiles){
     Client.commands.set(command.name, command);
 }
 
+
 Client.on('ready',  () => {
 
   Client.user.setActivity('BiizoNinja\'s Vids!' , {
