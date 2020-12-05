@@ -21,7 +21,7 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('Happy Birthday! @RubixStars' , {
+  Client.user.setActivity('BeastBoyEnder is back?!?' , {
     type: 'PLAYING'
   })
   Client.on('guildMemberAdd', message => {
