@@ -21,7 +21,7 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('BeastBoyEnder is back?!?' , {
+  Client.user.setActivity('COD with Viber2k' , {
     type: 'PLAYING'
   })
   Client.on('guildMemberAdd', message => {
