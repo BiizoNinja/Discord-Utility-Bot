@@ -9,6 +9,7 @@ module.exports = {
 
         if(content) {
             message.channel.send(content)
+            
         }
     }
 }
