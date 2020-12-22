@@ -21,8 +21,8 @@ for(const file of commandFiles){
 
 Client.on('ready',  () => {
 
-  Client.user.setActivity('COD with Viber2k' , {
-    type: 'PLAYING'
+  Client.user.setActivity(`${Client.users.cache.size} members :O` , {
+    type: 'WATCHING'
   })
   Client.on('guildMemberAdd', message => {
 
@@ -141,6 +141,16 @@ Client.on('message', message => {
 
    } else if(Command == 'say') {
      Client.commands.get('say').execute(message, args);
+
+   } else if(Command == 'ui') {
+     Client.commands.get('userinfo').execute(message, args);
+
+   } else if(Command == 'gamerrate') {
+    Client.commands.get('gamerrate').execute(message, args);
+
+   } else if(Command == 'gamer') {
+    Client.commands.get('gamerrate').execute(message, args);
+
    }
 
 });
