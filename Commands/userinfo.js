@@ -11,14 +11,17 @@ module.exports = {
         .setTitle('Simple User Info!')
         .setDescription(`Here is your Info!`)
         .addFields(
+
             {name: ':information_source: User Id', value: `${Author.id}`, inline: true},
             {name: ':green_circle: Discord Status', value: `${Author.presence.status}`, inline: true},
             {name: ':calendar_spiral: Joined Discord At', value: `${Author.createdAt}`, inline: false},
-            {name: 'Joined Server', value: `${joinedDate}`, inline: true},
-            {name: 'test2', value: `object Object`, inline: false}
+            {name: ':calendar: Joined Server', value: `${joinedDate}`, inline: false},
 
        
         )
+        .setFooter(`${Author.tag}`)
+        .setTimestamp()
+        .setColor('FFFF00');
 
     message.channel.send(userEmbed)
     }

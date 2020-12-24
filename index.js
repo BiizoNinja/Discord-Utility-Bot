@@ -148,10 +148,17 @@ Client.on('message', message => {
    } else if(Command == 'gamerrate') {
     Client.commands.get('gamerrate').execute(message, args);
 
-   } else if(Command == 'gamer') {
-    Client.commands.get('gamerrate').execute(message, args);
+   } else if(Command == 'userinfo') {
+    Client.commands.get('userinfo').execute(message, args);
 
+   } else if(Command == 'changappa') {
+    Client.commands.get('Changappa').execute(message, args);
+   
+   } else if(Command == 'version') {
+    Client.commands.get('version').execute(message, args);
    }
+
+
 
 });
 
