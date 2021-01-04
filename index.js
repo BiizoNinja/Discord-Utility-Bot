@@ -157,11 +157,28 @@ Client.on('message', message => {
    } else if(Command == 'version') {
     Client.commands.get('version').execute(message, args);
    }
+  
+   Client.on('message', message => {
+    if(!message.content.startsWith(Prefix) ||message.author.bot) return;
+  
+    const args = message.content.slice(Prefix.length).split(" ");
+    const Command = args.shift().toLowerCase();
+  
+    if (!Command.guildOnly && message.channel.type === 'dm') return;
+    
+    if(Command == 'gamer') {
+      Client.commands.get('gamerrate').execute(message, args)
+
+    } else if(Command == 'eval') {
+      Client.commands.get('eval').execute(message, args)
+    }
+
+   })
 
 
 
 });
 
 
-Client.login(process.env.token)
-//Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
+//Client.login(process.env.token)
+Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');

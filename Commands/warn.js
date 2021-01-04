@@ -4,15 +4,18 @@ module.exports = {
     name: 'warn' ,
     description:'warns a user!',
     execute(message, args) {
+        if(!(args[0])) return message.reply('This command is used to warn people!')
         if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply("**You do not have the permission to do this!** :lock:")
 
        
-        const user = message.mentions.users.first() || message.author;
+        var user = message.mentions.users.first() 
         const guild = message.guild
         const reason = args.slice(1).join(' ')
         if(!user) {
             message.channel.send('Please specify a user!')
           }
+        if( user = message.author) return message.reply('Why would you wanna warn your self?!')
+
      
         const WarnEmbed = new Discord.MessageEmbed()
         .setTitle('**The member has been successfully warned!**')
