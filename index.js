@@ -183,5 +183,5 @@ Client.on('message', message => {
 });
 
 
-//Client.login(process.env.token)
-Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
+Client.login(process.env.token)
+//Client.login('NzczODk5MDIzNTI5OTM0ODY4.X6P7oQ.k2k3qPuVMM2oYEboD-MKPCxOHrs');
