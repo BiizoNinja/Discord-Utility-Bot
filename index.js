@@ -8,6 +8,7 @@ const fs = require('fs');
 const { clearScreenDown } = require('readline');
 const keyboardsmash = require('./Commands/keyboardsmash');
 
+
  
 Client.commands = new Discord.Collection();
  

@@ -14,5 +14,6 @@ module.exports = {
             message.channel.send(`Error while evaluating: \`${e.message}\``); //Check for any errors;
 
         }
+
     }
 }

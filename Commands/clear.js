@@ -21,3 +21,4 @@ module.exports= {
     message.reply(`**Successfully** Deleted **${deleteAmount}** Messages.`)
     }
 }
+

@@ -7,6 +7,7 @@ module.exports = {
         return message.reply('You don\'t have the permissions')
        
 
+        
        const user = message.mentions.users.first(); 
 
        if(user) {
