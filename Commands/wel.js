@@ -3,9 +3,11 @@ module.exports = {
     aliases: 'welcome' ,
     description:'Welcomes people!',
     execute(message, args) {
-        message.channel.send('<a:welcome_red_1:775359667470991381><a:welcome_red_2:775359667957530624>')
+        // TIP: You need the ID of the emoji, to get the id do  \:emoji: 
+        message.channel.send(`YOUR WELCOME EMOJIS`)
 
 
     }
 }
+
 

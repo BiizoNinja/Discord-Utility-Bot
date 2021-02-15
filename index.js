@@ -1,15 +1,13 @@
+//Basic Variables!
 const Discord = require('discord.js');
 const Client = new Discord.Client() 
-
-
 const Prefix = '>'; 
-
 const fs = require('fs');
 const { clearScreenDown } = require('readline');
 const keyboardsmash = require('./Commands/keyboardsmash');
 
 
- 
+ // Command Handler
 Client.commands = new Discord.Collection();
  
 const commandFiles = fs.readdirSync('./Commands/').filter(file => file.endsWith('.js'));
@@ -19,7 +17,7 @@ for(const file of commandFiles){
     Client.commands.set(command.name, command);
 }
 
-
+//Ready Event
 Client.on('ready',  () => {
 
   Client.user.setActivity(`${Client.users.cache.size} members :O` , {
@@ -32,11 +30,11 @@ Client.on('ready',  () => {
 
    console.log('Channel not found!')
   
-   channel.send(`<:BL_wave:781730670594490379> New member has joined ${guild.name}. Welcome! ${member}`)
+   channel.send(`New member has joined ${guild.name}. Welcome! ${member}`)
   })
 
   })
-
+//Message Event!
 Client.on('message', message => {
   if(!message.content.startsWith(Prefix) ||message.author.bot) return;
 
@@ -104,7 +102,7 @@ Client.on('message', message => {
 
    } 
 });
-
+//Second Message Event
 Client.on('message', message => {
   if(!message.content.startsWith(Prefix) ||message.author.bot) return;
 
@@ -158,7 +156,7 @@ Client.on('message', message => {
    } else if(Command == 'version') {
     Client.commands.get('version').execute(message, args);
    }
-  
+  // Another Message Event
    Client.on('message', message => {
     if(!message.content.startsWith(Prefix) ||message.author.bot) return;
   
@@ -183,5 +181,5 @@ Client.on('message', message => {
 
 });
 
-
+//Logging-in to the bot
 Client.login('BOT_TOKEN');

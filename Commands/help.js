@@ -9,9 +9,9 @@ module.exports = {
         .setTitle('Help Command!')
         .setDescription('Prefix is ">"')
         .addFields(
-            {name: '**Fun Section**', value: '`ping` , `boop` , `wel`, `kill`, `keyboardsmash` , `yeet`, `rickroll`, `cakesmash`, `gamer` , `changappa`', inline: false} ,
-            {name: '**Moderation Section**', value: '`Clear` , `Ban` , `Kick` `slowmode` `warn` ', inline: false},
-            {name: '**Utility Section**', value: '`socials`, `deadchat`, `vote`, `membercount` , `userinfo` , `version` '}
+            {name: '**Fun Section**', value: '`ping`, `wel`, `kill`, `yeet`, `rickroll`, `cakesmash`, `gamer` ,', inline: true} ,
+            {name: '**Moderation Section**', value: '`clear` , `ban` , `kick` ,`slowmode`  ', inline: true},
+            {name: '**Utility Section**', value: ' `membercount` , `userinfo' }
         )
         .setColor('RANDOM')
         .setFooter('DM BiizoNinja#3337 for more info!')

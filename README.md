@@ -6,3 +6,13 @@ join ma discord: https://discord.gg/QRxscU5
 also if yuo have problem not mah problem, i have given up in dis code so DONT ask me ;)
 
 thanks boi.
+
+-------------------------------------------------------------
+# Packages used 
+
+discord.js - `npm i discord.js`
+mongoose - `npm i mongoose`
+util - `npm i util`
+node-fetch - `npm i node-fetch`
+
+-------------------------------------------------------------
