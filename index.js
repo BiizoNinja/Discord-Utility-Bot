@@ -45,9 +45,6 @@ Client.on('message', message => {
 
    if(Command === 'ping') {
     Client.commands.get('ping').execute(message, args);
-       
-   } else if(Command == 'boop') {
-     Client.commands.get('boop').execute(message, args);
 
    } else if(Command == 'wel') {
      Client.commands.get('wel').execute(message, args);
@@ -58,44 +55,14 @@ Client.on('message', message => {
    } else if(Command == 'clear') {
     Client.commands.get('clear').execute(message, args);
 
-   } else if(Command == 'socials') {
-     Client.commands.get('socials').execute(message, args);
-
-   } else if(Command == 'deadchat') {
-     Client.commands.get('deadchat').execute(message, args);
-
-   } else if(Command == 'pet') {
-     Client.commands.get('pet').execute(message, args);
-
    } else if(Command == 'kick') {
      Client.commands.get('kick').execute(message, args); 
-
-   } else if(Command == 'ban') {
-     Client.commands.get('ban').execute(message, args);
-
-   } else if(Command =='vote') {
-     Client.commands.get('vote').execute(message, args);
 
    } else if(Command == 'slowmode') {
      Client.commands.get('slowmode').execute(message, args);
 
-   } else if (Command == 'warn') {
-    Client.commands.get('warn').execute(message, args);
-
    } else if(Command == 'kill') {
      Client.commands.get('kill').execute(message, args);
-
-   } else if(Command == 'kbs') {
-     Client.commands.get('keyboardsmash').execute(message, args);
-
-   } else if(Command == 'keyboardsmash') {
-     Client.commands.get('keyboardsmash').execute(message, args);
-
-   }  else if(Command == 'welcome') {
-     Client.commands.get('wel').execute(message, args);
-
-   } else if(Command == 'w') {
-    Client.commands.get('warn').execute(message, args);
 
    } else if(Command == 'membercount') {
      Client.commands.get('membercount').execute(message, args);
@@ -123,9 +90,6 @@ Client.on('message', message => {
    } else if(Command == 'rickroll') {
      Client.commands.get('rickroll').execute(message, args);
 
-   } else if(Command == 'mute') {
-     Client.commands.get('mute').execute(message, args);
-
    } else if(Command == 'lb') {
      Client.commands.get('lambsauce').execute(message, args);
 
@@ -138,9 +102,6 @@ Client.on('message', message => {
    } else if(Command == 'cs') {
     Client.commands.get('cakesmash').execute(message, args);
 
-   } else if(Command == 'say') {
-     Client.commands.get('say').execute(message, args);
-
    } else if(Command == 'ui') {
      Client.commands.get('userinfo').execute(message, args);
 
@@ -149,12 +110,6 @@ Client.on('message', message => {
 
    } else if(Command == 'userinfo') {
     Client.commands.get('userinfo').execute(message, args);
-
-   } else if(Command == 'changappa') {
-    Client.commands.get('Changappa').execute(message, args);
-   
-   } else if(Command == 'version') {
-    Client.commands.get('version').execute(message, args);
    }
   // Another Message Event
    Client.on('message', message => {
