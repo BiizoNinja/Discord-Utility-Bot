@@ -10,9 +10,9 @@ thanks boi.
 -------------------------------------------------------------
 # Packages used 
 
-discord.js - `npm i discord.js`
-mongoose - `npm i mongoose`
-util - `npm i util`
-node-fetch - `npm i node-fetch`
+discord.js - ```npm i discord.js```,
+mongoose - ```npm i mongoose```,
+util - ```npm i util```,
+node-fetch - ```npm i node-fetch```,
 
 -------------------------------------------------------------
