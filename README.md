@@ -1,11 +1,8 @@
 # Discord-Utility-Bot
 
-This is a discord bot project made by me! But some of the code isn't good or something... IDK this is just a garbage discord bot. so if ya want some garbage code you get that here
+My Old Discord Bot! If you want some simple code and commands, so check this out 
 
-join ma discord: https://discord.gg/QRxscU5
-also if yuo have problem not mah problem, i have given up in dis code so DONT ask me ;)
-
-thanks boi.
+NOTE: There are very ineffective code in this! This code not at ALL meant to be for HUGE, PUBLIC bots (if you're using this for that ) This is just meant to be some code you can use when you need in an urgent.
 
 -------------------------------------------------------------
 # Packages used 
@@ -13,6 +10,6 @@ thanks boi.
 discord.js - ```npm i discord.js```,
 mongoose - ```npm i mongoose```,
 util - ```npm i util```,
-node-fetch - ```npm i node-fetch```,
+node-fetch - ```npm i node-fetch```
 
 -------------------------------------------------------------
